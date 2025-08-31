@@ -1,0 +1,62 @@
+body{
+    font-family:Arial , sans-serif;
+    margin:0;
+    padding:0;
+    background:#f9f9f9;
+    color:#333
+    line-height= 1.6;
+}
+header{
+    background:#4a90e2;
+    color:white;
+    text-align:center;
+    padding: 2rem 1rem;
+}
+header h1{
+    margin:0;font-size:2.5rem;
+}
+header p{
+    font-size: 1.2rem;
+}
+section{
+    padding:2rem;max-width:800px;margin:auto;
+}
+section h2{
+    color: #4a90e2;margin-bottom:1rem;
+}
+#skills ul{
+    list-style:none;padding:0;
+}
+#skills li{
+    background:#e3f2fd;
+    margin: 5px 0;
+    padding:10px;
+    border-radius:8px;
+}
+a{
+    color:#4a90e2;text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+footer{
+    background:#333; color:white;text-align:center;padding:1rem;margin-top:20px;
+}
+.dark-mode{
+    background:#1e1e1e; color:#f1f1f1;
+}
+.dark-mode header{
+    background:#222;
+}
+.dark-mode a{
+    color:#90caf9;
+}
+#modeBtn{
+    position:fixed;bottom:20px;right:20px;background:#4a90e2;color:white;border:none;padding:10px 15px;border-radius:8px;cursor:pointer;
+}
+#modeBtn:hover {
+    background:#357abd;
+}
+.profile{
+    width:140px;height:140px;border-radius:50%;object-fit:cover;display:block;margin:0.5rem auto;
+}
