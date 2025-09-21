@@ -1,37 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Anusha's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <img src="assets/img/photo.jpg" alt="Anusha" class="profile">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anusha's Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1> Chekuri Baby Anusha</h1>
-        <p> IT Student | Future Software Developer</p>
-    </header>
-    <section id="about">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java Programming</li>
-            <li>Data Structures & Algorithms</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>DBMS,OS,ComputerNetworks</li>
-            <li> Full StackDevelopment(Learning)</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:babyanushachekuri@gmail.com">babyanushachekuri@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/anusha1234">linkedin.com/in/anusha</a></p>
-        <p>GitHub: <a href="https://github.com/babyanushachekuri">github.com/anusha</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Anusha. All rights reserved.</p>
-    </footer>
-    <button onclick="toggleMode()" id="modeBtn">Toggle Dark/Light Mode</button>
-    <script src="script.js"></script>;
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">Anusha</h2>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleMode()" class="mode-btn"><i class="fas fa-adjust"></i></button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <img src="assets/img/photo.jpg" alt="Anusha" class="profile-pic" data-aos="zoom-in">
+    <h1 data-aos="fade-up">Hi, I'm <span>Anusha</span></h1>
+    <h2 id="typing"></h2>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 data-aos="fade-up">About Me</h2>
+    <p data-aos="fade-right">
+      I am an enthusiastic IT student and aspiring software developer passionate about building beautiful and functional web applications.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 data-aos="fade-up">Skills</h2>
+    <div class="skill" data-aos="fade-right">
+      <p>Java</p><div class="bar"><div style="width:85%"></div></div>
+    </div>
+    <div class="skill" data-aos="fade-right">
+      <p>Data Structures & Algorithms</p><div class="bar"><div style="width:75%"></div></div>
+    </div>
+    <div class="skill" data-aos="fade-right">
+      <p>HTML / CSS / JavaScript</p><div class="bar"><div style="width:90%"></div></div>
+    </div>
+    <div class="skill" data-aos="fade-right">
+      <p>DBMS / OS / Computer Networks</p><div class="bar"><div style="width:70%"></div></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="project-container"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 data-aos="fade-up">Contact Me</h2>
+    <form data-aos="fade-right">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <div class="contact-links" data-aos="fade-up">
+      <a href="mailto:babyanushachekuri@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://github.com/babyanushachekuri" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/anusha1234" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Anusha. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
