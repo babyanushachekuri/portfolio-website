@@ -56,13 +56,6 @@ const projects = [
     live: "https://babyanushachekuri.github.io/portfolio-website/",
     github: "https://github.com/babyanushachekuri/portfolio-website/"
   },
-  {
-    title: "Portfolio Website 2",
-    description: "Another modern UI portfolio website.",
-    image: "assets/img/project2.jpg",
-    live: "https://yourusername.github.io/project2/",
-    github: "https://github.com/your-github/project2"
-  }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
